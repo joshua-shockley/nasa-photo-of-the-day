@@ -19,6 +19,9 @@ useEffect(()=> {
     })
 },[]);
 
+if (!pics.url) return <h1 className="loading-comment">Loading...<span role="img" aria-label="alien">👽</span></h1>;
+
+
 return(
 <div className="thepic-container">
     <div className="thePicItself">
