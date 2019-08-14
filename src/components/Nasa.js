@@ -3,20 +3,28 @@ import axios from "axios";
 import NasaCard from "./NasaCard.js";
 
 export default function Nasa() {
-const[pics, setPics] = useState([]);
+const[pics, setPics] = useState("");
 
 useEffect(()=> {
-    axios.get(`the url for nasa api  ${date}`)
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=MFLCF9PdTielYpq01JazxgVJSPt4wp2zFHV9tdeV`)
     .then(response => {
-        const theDailyImage = response.?;
+        console.log(response);
+        const theDailyImage = response.data;
         console.log(theDailyImage);
         setPics(theDailyImage);
-    });
-},[date]);
+        console.log("can you see this from inside the axios")
+    })
+    .catch(err => {
+        console.log(err.message);
+    })
+},[]);
 
 return(
 <div className="thepic-container">
-    <NasaCard key={imgUrl} date={date} imgUrl={imgUrl}/>
+    <div className="thePicItself">
+            <NasaCard key={pics.url} title={pics.title} date={pics.date} imgUrl={pics.url} explanation={pics.explanation}/>
+    </div>
+    <p>this is working from the nasa.js return</p>
 </div>
 );
 }
