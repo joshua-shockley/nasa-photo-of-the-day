@@ -19,7 +19,7 @@ useEffect(()=> {
     })
 },[]);
 
-if (!pics.url) return <h1 className="loading-comment">Loading...<span role="img" aria-label="alien">👽</span></h1>;
+if (!pics.url) return <h1 className="loading-comment">Loading......<span role="img" aria-label="alien">👽</span></h1>;
 
 
 return(
@@ -27,7 +27,6 @@ return(
     <div className="thePicItself">
             <NasaCard key={pics.url} title={pics.title} date={pics.date} imgUrl={pics.url} explanation={pics.explanation}/>
     </div>
-    <p>this is working from the nasa.js return</p>
 </div>
 );
 }
