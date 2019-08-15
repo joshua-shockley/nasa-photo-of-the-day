@@ -3,7 +3,9 @@ import "./App.css";
 import Nasa from "./components/Nasa.js";
 import Footer from "./components/Footer.js";
 import Header from "./components/Header.js";
-console.log("you can see this... its working ok! apps.js")
+import {Card, Icon,Image, CardContent} from 'semantic-ui-react';
+
+// console.log("you can see this... its working ok! apps.js")
 function App() {
   return (
     <div className="App">

@@ -33,3 +33,15 @@
         transform: rotate(360deg);
     }
 }
+
+.rotate {
+    transition-delay: 2s;
+    animation: App-logo-spin 4s infinite;
+    padding: 1rem 1rem;
+}
+
+.theVeryBottom {
+    background-color: #282c34;
+    color: white;
+    height: 2%;
+}
