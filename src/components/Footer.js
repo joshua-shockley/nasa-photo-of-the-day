@@ -1,10 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import logo from '../images/reactlogo.png';
 
 function Footer() {
     const Linkh6 = styled.h6` 
-    
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    padding: 30px;
+    margin: 10px auto;
+    border-radius:15%;
+    `;
+
+    const Button = styled.button` 
+    color: darkslategrey;
     `;
 
     const Footerdiv = styled.div`
@@ -15,6 +24,11 @@ function Footer() {
     justify-content: center;
     color: white;
     border-radius: 3%;
+    `;
+
+    const FooterImage = styled.img`
+    width: 90px;
+    height: auto;
     `;
 
     return(
@@ -29,7 +43,12 @@ function Footer() {
             <div >
                 <Linkh6 className="theVeryBottom">
                     <p>We'd like to thank Unsplash for allowing the use of contributions to sites like this see link below to checkout some of the amazing images they have that are open to the public for use.</p>
-                    <a href="https://unsplash.com/@nypl?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge"f target="_blank" rel="noopener noreferrer" alt="link to the new yourk public library">Unsplash Link to New York Public Library</a>
+                    <Button>
+                        <a href="https://unsplash.com/@nypl?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge"f target="_blank" rel="noopener noreferrer" alt="link to the new yourk public library">Unsplash Link to New York Public Library</a>
+                    </Button>
+                    <p>This site is also brought to you by React!</p>
+                    <FooterImage src={logo} alt="react logo" onClick="https://reactjs.org"/>
+
                 </Linkh6>
             </div>
 

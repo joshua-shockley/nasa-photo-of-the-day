@@ -8,7 +8,7 @@ export default function Header(){
 
     const Headerdiv = styled.div` 
     background-color: #282c34;
-    min-height: 50vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -18,7 +18,7 @@ export default function Header(){
     `;
 
     const HeaderMenu = styled.div` 
-    background:white;
+    background:silver;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -26,6 +26,7 @@ export default function Header(){
     font-size: calc(10px + 2vmin);
     height: 100px;
     margin-top: 20px;
+    border-radius:5%;
 
     `;
 
@@ -35,6 +36,7 @@ export default function Header(){
     height: 20%;
     border-radius: 50%;
     align-self: center;
+    margin:10px auto;
 
     `;
 
