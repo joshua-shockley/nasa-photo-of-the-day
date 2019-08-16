@@ -12,7 +12,7 @@ useEffect(()=> {
     .then(response => {
         // console.log(response);
         const theDailyImage = response.data;
-        console.log(theDailyImage);
+        // console.log(theDailyImage);
         setPics(theDailyImage);
         // console.log("can you see this from inside the axios")
     })
