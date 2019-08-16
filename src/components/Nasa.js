@@ -12,7 +12,7 @@ useEffect(()=> {
     .then(response => {
         // console.log(response);
         const theDailyImage = response.data;
-        // console.log(theDailyImage);
+        console.log(theDailyImage);
         setPics(theDailyImage);
         // console.log("can you see this from inside the axios")
     })
@@ -26,7 +26,7 @@ if (!pics.url) return <h1 className="loading-comment">Loading......<span role="i
 return(
 <div className="thepic-container">
     <div className="thePicItself">
-            <NasaCard key={pics.url} title={pics.title} date={pics.date} imgUrl={pics.url} explanation={pics.explanation}/>
+            <NasaCard key={pics.url} title={pics.title} date={pics.date} imgUrl={pics.url} explanation={pics.explanation} hdImgUrl={pics.hdurl}/>
     </div>
 </div>
 );

@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 
 const NasaCard = (props) => {
+    
+
     const CardDiv = styled.div`
     width:80%;
     margin: 2% auto;
@@ -30,7 +32,9 @@ const NasaCard = (props) => {
     font-size: 1.3rem;
     color: white;
     `;
+    
 
+    
     return (
         // <div className="nasa-cardInfo" key={props.title}>
         //     <h2 className="nasa_title">Nasa's Photo Of The Day: <strong>{props.title}</strong></h2>
@@ -42,7 +46,7 @@ const NasaCard = (props) => {
             <CardContent>
                 <Header>Nasa's Photo Of The Day: <strong>{props.title}</strong></Header>
                 <CardP>Date: <strong>{props.date}</strong></CardP>
-                <Image src={props.imgUrl} alt={props.title}/>
+                <a href={props.hdImgUrl} target="_blank" rel="noopener noreferrer" ><Image src={props.imgUrl} alt={props.title}/></a>
                 <CardP><strong>What's This: </strong>{props.explanation}</CardP>
 
             </CardContent>

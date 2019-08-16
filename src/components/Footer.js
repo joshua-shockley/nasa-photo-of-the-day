@@ -30,6 +30,7 @@ function Footer() {
     width: 90px;
     height: auto;
     `;
+    
 
     return(
         <div>
@@ -47,8 +48,8 @@ function Footer() {
                         <a href="https://unsplash.com/@nypl?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge"f target="_blank" rel="noopener noreferrer" alt="link to the new yourk public library">Unsplash Link to New York Public Library</a>
                     </Button>
                     <p>This site is also brought to you by React!</p>
-                    <FooterImage src={logo} alt="react logo" onClick="https://reactjs.org"/>
-
+                   <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer"><FooterImage src={logo} alt="react logo"/></a>
+                    <p>This page also brought to you by my undying love of SPACE</p>
                 </Linkh6>
             </div>
 

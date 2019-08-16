@@ -40,6 +40,15 @@ export default function Header(){
 
     `;
 
+    // const Button = styled.button`
+    // color: #61dafb;
+    // background: rgb(44, 2, 2);
+    // margin: 0px 10px 0px 10px;
+    // font-size: 1.2rem;
+    // border-radius: 5%;
+
+    // `;
+
     return(
     <Headerdiv>
         <Image className="rotate" src={logo} alt="spinning globe logo dealy....lol"/>
@@ -47,7 +56,7 @@ export default function Header(){
             <h2><button className="App-link">HOME</button></h2>
             <h2><button className="App-link">ABOUT</button></h2>
             <h2><button className="App-link">BECOME A MEMBER</button></h2>
-            <h2><button className="App-link">LOOK AT SOME ASTROIDS!</button></h2>
+            {/* <h2><button className="App-link">LOOK AT SOME ASTROIDS!</button></h2> */}
         </HeaderMenu>
     </Headerdiv>
     );

@@ -24,6 +24,7 @@
     background: rgb(44, 2, 2);
     margin: 0px 10px 0px 10px;
     font-size: 1.2rem;
+    border-radius: 5%;
 }
 
 @keyframes App-logo-spin {
@@ -36,7 +37,7 @@
 }
 
 .rotate {
-    transition-delay: 2s;
+    transition-delay: 0s;
     animation: App-logo-spin 4s infinite;
     padding: 1rem 1rem;
 }
