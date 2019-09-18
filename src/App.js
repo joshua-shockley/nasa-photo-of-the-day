@@ -9,11 +9,6 @@ import {Card, Icon,Image, CardContent} from 'semantic-ui-react';
 function App() {
   return (
     <div className="App">
-      {/* <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label="rocket"> 🚀</span>!
-        
-      </p> */}
       <div><Header/></div>
       
       <Nasa/>
